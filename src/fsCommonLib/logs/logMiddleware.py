@@ -7,7 +7,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 from starlette.types import ASGIApp
 
-from logs.logger import RequestIdFilter, logger
+from fsCommonLib.logs.logger import RequestIdFilter, logger
 
 
 class LogMiddleware(BaseHTTPMiddleware):

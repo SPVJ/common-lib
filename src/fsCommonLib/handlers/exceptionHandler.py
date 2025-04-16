@@ -2,7 +2,7 @@
 from fastapi import Request, FastAPI
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from handlers.genericException import GenericException
+from fsCommonLib.handlers.genericException import GenericException
 
 async def validationExceptionHandler(request: Request, ex: RequestValidationError):
     return JSONResponse(
